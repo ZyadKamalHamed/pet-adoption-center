@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+
+<VBox fx:controller="controller.CustomerDashboardController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="20" prefWidth="400" styleClass="background">
+    <VBox alignment="TOP_CENTER">
+        <ImageView fitWidth="736" fitHeight="416">
+        <Image url="/image/cat_banner.jpg"/>
+    </ImageView>
+    <Separator/>
+</VBox>
+
+    <Label fx:id="welcomeLbl" text="Welcome" styleClass="heading"/>
+    <Separator/>
+
+    <ListView fx:id="animalsLv" styleClass="list-cell"/>
+
+    <HBox>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" fx:id="myDetailsBtn" text="My Details"  alignment="BOTTOM_CENTER"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" fx:id="adoptBtn" text="Adopt" disable="true" alignment="BOTTOM_CENTER"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" fx:id="closeBtn" text="Close" alignment="BOTTOM_CENTER"/>
+    </HBox>
+
+    <stylesheets>
+    <URL value="@/view/style.css"/>
+    </stylesheets>
+</VBox>

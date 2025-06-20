@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox fx:controller="controller.DetailsController" alignment="CENTER" styleClass="background" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml" spacing="20">
+    <VBox alignment="TOP_CENTER">
+        <ImageView fitWidth="736" fitHeight="416">
+            <Image url="/image/cat_banner.jpg"/>
+        </ImageView>
+        <Separator/>
+    </VBox>
+
+    <Label fx:id="nameLbl" text="name" styleClass="heading" />
+    <Separator/>
+    <Label text="Adopted Animals" styleClass="heading"/>
+    <ListView fx:id="adoptedAnimalsLv" styleClass="list-cell" >
+        <placeholder>
+            <Text text="No animals adopted"/>
+        </placeholder>
+    </ListView>
+
+
+
+
+    <HBox alignment="BOTTOM_CENTER">
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" fx:id="closeBtn" text="Close"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@/view/style.css"/>
+    </stylesheets>
+</VBox>

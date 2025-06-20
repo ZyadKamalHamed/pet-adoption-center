@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox fx:controller="controller.ManagerDashboardController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" prefWidth="400" styleClass="background" spacing="20">
+    <VBox alignment="TOP_CENTER">
+        <ImageView fitWidth="736" fitHeight="416">
+            <Image url="/image/cat_banner.jpg"/>
+        </ImageView>
+        <Separator/>
+    </VBox>
+
+    <Label text="Manager Dashboard" styleClass="heading"/>
+    <Separator/>
+
+    <HBox alignment="CENTER">
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="filterAllBtn" text="All" styleClass="filter"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="filterCatBtn" text="Cat" styleClass="filter"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="filterDogBtn" text="Dog" styleClass="filter"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="filterRabbitBtn" text="Rabbit" styleClass="filter"/>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <TableView fx:id="animalsTable" prefHeight="400" HBox.hgrow="ALWAYS" maxWidth="Infinity">
+            <placeholder>
+                <Text text="No animals available for adoption"/>
+            </placeholder>
+            <columns>
+                <TableColumn fx:id="nameCol" text="Name" styleClass="table-column"/>
+                <TableColumn fx:id="typeCol" text="Type" styleClass="table-column"/>
+                <TableColumn fx:id="ageCol" text="Age" styleClass="table-column"/>
+                <TableColumn fx:id="statusCol" text="Adoption Status" styleClass="table-column"/>
+            </columns>
+        </TableView>
+
+    </HBox>
+
+
+    <HBox>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="userListBtn" text="User List"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="addBtn" text="Add"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="removeBtn" text="Remove"/>
+        <Button HBox.hgrow="ALWAYS" maxWidth="Infinity" maxHeight="Infinity" fx:id="closeBtn" text="Close"/>
+    </HBox>
+    <stylesheets>
+        <URL value="@/view/style.css"/>
+    </stylesheets>
+</VBox>
