@@ -164,7 +164,7 @@ This was an educational project created for Programming 2 class at UTS and for p
 
 ### Login Screen
 
-[Screenshot 2025-06-20 141129](https://github.com/user-attachments/assets/dc7ed8e1-5cac-4f45-9636-2177bc83172e)
+![Screenshot 2025-06-20 141129](https://github.com/user-attachments/assets/dc7ed8e1-5cac-4f45-9636-2177bc83172e)
 ![Screenshot 2025-06-20 141137](https://github.com/user-attachments/assets/53a33b41-6ad8-43c5-9bb5-94a89db73665)
 
 ### Customer Dashboard
